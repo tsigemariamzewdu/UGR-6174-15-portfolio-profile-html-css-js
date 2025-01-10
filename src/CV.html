@@ -4,73 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tsigemariam</title>
+    <link rel="stylesheet" href="css/style.css">
     
     <link rel="icon" href="./images/favicon-4.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="mode-controller">
-            <img src="./icons/sun-solid.svg" alt="Light Mode Icon" class="icon"> <!-- Light Mode -->
-            <img src="./icons/moon-solid.svg" alt="Dark Mode Icon" class="icon"> <!-- Dark Mode -->
-        </div>
-        <div class="bar-toggler">
-            <img src="./icons/bars-solid.svg" alt="toggler-icon" class="icon">
-        </div>
         <div class="logo">
-            <img src="./images/logo-dark-mode.png" alt="Logo in dark mode">
+            <img src="./images/logo-light-mode.png" alt="Logo in dark mode" class="logo">
         </div>
+        <div class="bar-toggler" id="openSidebar" aria-label="Toggle Navigation">
+            <img src="./icons/bars-solid.svg" alt="Menu" class="icon">
+        </div>
+        <div class="main-nav">
         <nav aria-label="Main Navigation">
             <ul>
                 <li>
-                    <img src="./icons/home-solid.svg" alt="Home Icon" class="icon">
+                    <img src="./icons/house-solid.svg" alt="Home Icon" class="icon">
                     <a href="./Home.html">Home</a>
                 </li>
-                <li>
-                    <img src="./icons/user-solid.svg" alt="About Me Icon" class="icon">
-                    <a href="./About-me.html">About Me</a>
-                </li>
-                <li>
-                    <img src="./icons/diagram-project-solid.svg" alt="Projects Icon" class="icon">
-                    <a href="./Projects.html">Projects</a>
-                </li>
-                <li>
-                    <img src="./icons/file-solid.svg" alt="CV Icon" class="icon">
-                    <a href="./CV.html">CV</a>
-                </li>
-                <li>
-                    <img src="./icons/address-book-solid.svg" alt="Contact Me Icon" class="icon">
-                    <a href="./Contact-me.html">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-<main>
-<div class="cv">
+            <li>
+                <img src="./icons/user-solid.svg" alt="About Me Icon" class="icon">
+                <a href="./About-me.html">About Me</a>
+            </li>
+            <li>
+                <img src="./icons/diagram-project-solid.svg" alt="Projects Icon" class="icon">
+                <a href="./Projects.html">Projects</a>
+            </li>
+            <li>
+                <img src="./icons/file-solid.svg" alt="CV Icon" class="icon">
+                <a href="./CV.html">CV</a>
+            </li>
+            <li>
+                <img src="./icons/address-book-solid.svg" alt="Contact Me Icon" class="icon">
+                <a href="./Contact-me.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    
+</header>
+<div id="sidebar" class="sidebar hidden">
+    <button id="closeSidebar" class="close-button" aria-label="Close Sidebar">X</button>
+    <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./About-me.html">About Me</a></li>
+        <li><a href="./Projects.html">Projects</a></li>
+        <li><a href="./CV.html">CV</a></li>
+        <li><a href="./Contact-me.html">Contact Me</a></li>
+    </ul>
+</div>
+<main class="cv-page">
     <h1>cv</h1>
+<div class="cv">
+   
     <div class="cv-image">
         <img src="./images/image.png" alt="cv-image">
     </div>
     <div class="cv-contact">
-        <h2>contact-me</h2>
-        <img src="./icons/address-book-solid.svg" alt="addressbook-icon">
+        <!-- <img src="./icons/address-book-solid copy.svg" alt="addressbook-icon" class="cv-icon">
+        <h2>contact-me</h2> -->
+       
+        <div class="contact-me-myinfo">
+           
+            <address>
+                <div class="address-detail">
+                    <img src="./icons/location-dot-solid.svg" alt="location-icon" class="cv-icon">
+                    <p>Location: Addis Ababa, Ethiopia</p>
+                </div>
+                <div class="address-detail">
+                    <img src="./icons/envelope-solid.svg" alt="email-icon" class="cv-icon">
+                    <p>Email: <a href="mailto:tsigemariamzewdu20@gmail.com">tsigemariamzewdu20@gmail.com</a></p>
+                </div>
+                <div class="address-detail">
+                    <img src="./icons/phone-solid.svg" alt="phone-icon" class="cv-icon">
+                    <p>Phone: +251-9-93-04-33-07</p>
+                </div>
+            </address>
+        </div>
         
-        <address>
-            <img src="./icons/location-dot-solid.svg" alt="location-icon">
-            Location: Addis Ababa , Ethipia 
-            <img src="./icons/envelope-solid.svg" alt="email-icon">Email: <a href="mailto:tsigemariamzewdu20@gmail.com">tsigemariamzewdu20@gmail.com</a><br>
-           <img src="./icons/phone-solid.svg" alt="phone-icon">Phone: +251-9-93-04-33-07
-            
-        </address>
-
     </div>
     <div class="cv-about-me">
+        <div class="cv-about">
+        <img src="./icons/user-solid copy.svg" alt="user-icon" class="cv-icon">
         <h2>About Me</h2>
-        <img src="./icons/user-solid.svg" alt="user-icon">
-        <p>I am a third-year Software Engineering student and an aspiring Full-Stack Engineer passionate about technology and its potential to transform the world. With a strong foundation in web development and problem-solving, I aspire to contribute to space science and astronomy, combining my skills in software engineering with my curiosity about the cosmos. I am eager to take on challenging projects and leave a meaningful impact in both technology and space exploration. </p>
     </div>
+        <p>I am a third-year Software Engineering student and aspiring Full-Stack Engineer passionate about technology, space science, and creating impactful solutions.</p></div>
     <div class="cv-education">
+        <div class="cv-about">
+        <img src="./icons/school-solid.svg" alt="school-icon" class="cv-icon">
         <h2>Education</h2>
-        <img src="./icons/school-solid.svg" alt="school-icon">
+        </div>
+        
         <div class="education-item">
             <h3>Millennium High School</h3>
             <p><strong>Duration:</strong> 2016 - 2020</p>
@@ -83,9 +108,13 @@
           </div>
 
     </div>
+    </div>
     <div class="cv-experience">
+        <div class="cv-about">
+        <img src="./icons/briefcase-solid copy.svg" alt="briefcase-icon" class="cv-icon">
         <h2>Experience</h2>
-        <img src="./icons/briefcase-solid.svg" alt="briefcase-icon">
+    </div>
+       
         <div class="experience-item">
             <h3>Assistant Coach</h3>
             <p><strong>Organization:</strong> STEM for Kids</p>
@@ -99,8 +128,10 @@
           </div>
     </div>
     <div class="cv-skills">
-       <img src="./icons/laptop-solid.svg" alt="laptop-icon">
+        <div class="cv-about">
+       <img src="./icons/laptop-solid.svg" alt="laptop-icon" class="cv-icon">
         <h2>skills</h2>
+    </div>
 
         <!-- then there will be a table -->
         <table >
@@ -115,79 +146,79 @@
                 <tr>
                     <td>1</td>
                     <td>HTML
-                        <img src="./icons/html.png" alt="html-icon">
+                        <img src="./icons/html.png" alt="html-icon" class="cv-icon">
 
                     </td>
                     <td>Frontend Development</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>CSS <img src="./icons/css.png" alt="css-icon"></td>
+                    <td>CSS <img src="./icons/css.png" alt="css-icon" class="cv-icon"></td>
                     <td>Frontend Development</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>JavaScript <img src="./icons/javascript.png" alt="Javascript-icon"></td>
+                    <td>JavaScript <img src="./icons/javascript.png" alt="Javascript-icon" class="cv-icon"></td>
                     <td>Frontend Development</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>React.js <img src="./icons/react-original.svg" alt="react-icon"></td>
+                    <td>React.js <img src="./icons/react-original.svg" alt="react-icon" class="cv-icon"></td>
                     <td>Frontend Development</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>Node.js <img src="./icons/nodejs-original-wordmark.svg" alt="node-icon"></td>
+                    <td>Node.js <img src="./icons/nodejs-original-wordmark.svg" alt="node-icon" class="cv-icon"></td>
                     <td>Backend Development</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>Express.js <img src="./icons/express-original.svg" alt="express-icon"></td>
+                    <td>Express.js <img src="./icons/express-original.svg" alt="express-icon" class="cv-icon"></td>
                     <td>Backend Development</td>
                 </tr>
                 
                 <tr>
                     <td>7</td>
-                    <td>MongoDB <img src="./icons/mongodb.png" alt="mongodb-icon"></td>
+                    <td>MongoDB <img src="./icons/mongodb.png" alt="mongodb-icon" class="cv-icon"></td>
                     <td>Database Management</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td>Mysql <img src="./icons/mysql.png" alt="mysql-icon">
+                    <td>Mysql <img src="./icons/mysql.png" alt="mysql-icon" class="cv-icon">
 
                     </td>
                     <td>Database Management</td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td>postgresql <img src="./icons/postgresql-original.svg" alt="postgresql-icon"></td>
+                    <td>postgresql <img src="./icons/postgresql-original.svg" alt="postgresql-icon" class="cv-icon"></td>
                     <td>Database Management</td>
                 </tr>
 
                 <tr>
                     <td>10</td>
-                    <td>Python <img src="./icons/python.png" alt="python-icon"></td>
+                    <td>Python <img src="./icons/python.png" alt="python-icon" class="cv-icon"></td>
                     <td>Programming Language</td>
                 </tr>
                 <tr>
                     <td>11</td>
-                    <td>Java <img src="./icons/java.png" alt="java-icon"></td>
+                    <td>Java <img src="./icons/java.png" alt="java-icon" class="cv-icon"></td>
                     <td>Programming Language</td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="cv-button">
-        <a href="./pdf/cv.pdf" download="cv.pdf">
+        <div class="buttons">
+    
+        <a href="./pdf/cv.pdf" download="cv.pdf" class="cv-Button">
             download cv
-          </a>
-    </div>
+          </a></div>
+          
 </div>
 
 </main>
 <footer>
     <div class="icons">
-        <a href="https://github.com/tsigemariamzewdu" target="_blank"  aria-label="GitHub">
+        <a href="https://github.com/tsigemariamzewdu" target="_blank"  aria-label="GitHub" class="icon">
             <img src="./icons/github-brands-solid.svg" alt="GitHub Icon" class="icon">
         </a>
         <a href="https://www.linkedin.com/in/tsigemariam-zewdu-600770266/" target="_blank"  aria-label="LinkedIn">
@@ -208,6 +239,6 @@
     </nav>
     <p>&copy; <span id="year"></span> Tsigemariam Zewdu. All rights reserved.</p>
 </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>

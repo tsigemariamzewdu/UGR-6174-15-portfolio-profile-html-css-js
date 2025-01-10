@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tsigemariam</title>
     
     <link rel="icon" href="./images/favicon-4.ico" type="image/x-icon">
@@ -10,76 +11,97 @@
 </head>
 <body>
     <header>
-        <div class="mode-controller">
-            <img src="./icons/sun-solid.svg" alt="Light Mode Icon" class="icon"> <!-- Light Mode -->
-            <img src="./icons/moon-solid.svg" alt="Dark Mode Icon" class="icon"> <!-- Dark Mode -->
-        </div>
-        <div class="bar-toggler">
-            <img src="./icons/bars-solid.svg" alt="toggler-icon" class="icon">
-        </div>
         <div class="logo">
-            <img src="./images/logo-dark-mode.png" alt="Logo in dark mode">
+            <img src="./images/logo-light-mode.png" alt="Logo in dark mode" class="logo">
         </div>
+        <div class="bar-toggler" id="openSidebar" aria-label="Toggle Navigation">
+            <img src="./icons/bars-solid.svg" alt="Menu" class="icon">
+        </div>
+        <div class="main-nav">
         <nav aria-label="Main Navigation">
             <ul>
                 <li>
-                    <img src="./icons/home-solid.svg" alt="Home Icon" class="icon">
+                    <img src="./icons/house-solid.svg" alt="Home Icon" class="icon">
                     <a href="./Home.html">Home</a>
                 </li>
-                <li>
-                    <img src="./icons/user-solid.svg" alt="About Me Icon" class="icon">
-                    <a href="./About-me.html">About Me</a>
-                </li>
-                <li>
-                    <img src="./icons/diagram-project-solid.svg" alt="Projects Icon" class="icon">
-                    <a href="./Projects.html">Projects</a>
-                </li>
-                <li>
-                    <img src="./icons/file-solid.svg" alt="CV Icon" class="icon">
-                    <a href="./CV.html">CV</a>
-                </li>
-                <li>
-                    <img src="./icons/address-book-solid.svg" alt="Contact Me Icon" class="icon">
-                    <a href="./Contact-me.html">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <li>
+                <img src="./icons/user-solid.svg" alt="About Me Icon" class="icon">
+                <a href="./About-me.html">About Me</a>
+            </li>
+            <li>
+                <img src="./icons/diagram-project-solid.svg" alt="Projects Icon" class="icon">
+                <a href="./Projects.html">Projects</a>
+            </li>
+            <li>
+                <img src="./icons/file-solid.svg" alt="CV Icon" class="icon">
+                <a href="./CV.html">CV</a>
+            </li>
+            <li>
+                <img src="./icons/address-book-solid.svg" alt="Contact Me Icon" class="icon">
+                <a href="./Contact-me.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    
+</header>
+<div id="sidebar" class="sidebar hidden">
+    <button id="closeSidebar" class="close-button" aria-label="Close Sidebar">X</button>
+    <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./About-me.html">About Me</a></li>
+        <li><a href="./Projects.html">Projects</a></li>
+        <li><a href="./CV.html">CV</a></li>
+        <li><a href="./Contact-me.html">Contact Me</a></li>
+    </ul>
+</div>
     <main>
         <p class="title">
             My Work
         </p>
-        <div class="whole-projects"></div>
-        <div class="single-project">
-            
-            <video src="./videos/evangadi-forum.mp4"
-            controls
-            poster="./images/evangadi-forum.jpg"></video>
-            <p>tech stack</p>
-            <div class="tech-stack-icons">
-                <img src="./icons/react-original.svg" alt="React"> <p>React.js</p>
-                <img src="./icons/css.png" alt="css-icon"><p>CSS</p> 
-                <img src="./icons/nodejs-original-wordmark.svg" alt="nodejs-icon"><p>Node.js</p>
-               <img src="./icons/mysql.png" alt="mysql-icon"><p>mysql</p>
-            </div>
-           <a href="https://github.com/tsigemariamzewdu/Birthday-reminder-webapp"> <img src="./icons/github-brands-solid.svg" alt="github"></a>
-            
-              <button>see more</button>
-        </div>
+        <div class="whole-projects">
+            <div class="single-project">
+                <!-- Video Section -->
+                <video 
+                  src="./videos/netflix-clone.mp4" 
+                  controls 
+                  poster="./images/netflix-t.jpg">
+                  Your browser does not support the video tag.
+                </video>
+              
+                <!-- Project Title -->
+                <h3>Evangadi Forum: Question and Answer Platform</h3>
+              
+                <!-- Tech Stack Section -->
+                <p>Tech Stack</p>
+                <div class="tech-stack-icons">
+                  <img src="./icons/react-original.svg" alt="React">
+                  <img src="./icons/css.png" alt="CSS Icon">
+                  <img src="./icons/javascript.png" alt="JavaScript Icon">
+                  <img src="./icons/express-original.svg" alt="Express.js Icon">
+                  <img src="./icons/nodejs-original-wordmark.svg" alt="Node.js Icon">
+                </div>
+              
+                <!-- GitHub Link -->
+                <a href="https://github.com/tsigemariamzewdu/Netflix-Clone-frontend" target="_blank">
+                  <img src="./icons/github-brands-solid.svg" alt="GitHub Icon" class="icon">
+                </a>
+              </div>
+              
         <div class="single-project">
             <video src="./videos/Portfolio.mp4" controls
             poster="images/portfolio-background.jpg"></video>
             <p>tech stack</p>
             <div class="tech-stack-icons">
-               <img src="./icons/html.png" alt="html-icon"><p> HTML</p>
-               <img src="./icons/css.png" alt="css-icon"><p>CSS</p> 
-               <img src="./icons/javascript.png" alt="js-icon"><p>Javascript</p>
+               <img src="./icons/html.png" alt="html-icon">
+               <img src="./icons/css.png" alt="css-icon">
+               <img src="./icons/javascript.png" alt="js-icon">
                 
                 
             </div>
-           <a href="https://github.com/tsigemariamzewdu/portfolio"><img src="./icons//github-brands-solid.svg" alt="github-icon"></a>
+           <a href="https://github.com/tsigemariamzewdu/portfolio"><img src="./icons//github-brands-solid.svg" alt="github-icon" class="icon"></a>
           
-              <button>see more</button>
+             
         </div>
         <div class="single-project">
             <!-- here will be the birth day reminder app i will finish the design and i will record a video -->
@@ -88,56 +110,57 @@
             poster="./images/birthday-reminder.png"></video>
             <p>tech stack</p>
             <div class="tech-stack-icons">
-                <img src="./icons/react-original.svg" alt="React"> <p>React.js</p>
-                <img src="./icons/css.png" alt="css-icon"><p>CSS</p> 
-                <img src="./icons/nodejs-original-wordmark.svg" alt="nodejs-icon"><p>Node.js</p>
-               <img src="./icons/mysql.png" alt="mysql-icon"><p>mysql</p>
+                <img src="./icons/react-original.svg" alt="React"> 
+                <img src="./icons/css.png" alt="css-icon">
+                <img src="./icons/nodejs-original-wordmark.svg" alt="nodejs-icon">
+               <img src="./icons/mysql.png" alt="mysql-icon">
                 
             </div>
-            <img src="./icons//github-brands-solid.svg" alt="github-icon"><a href="https://github.com/tsigemariamzewdu/Birthday-reminder-webapp"></a>
+            <!-- <img src="./icons//github-brands-solid.svg" alt="github-icon"><a href="https://github.com/tsigemariamzewdu/Birthday-reminder-webapp" class="icon"></a> -->
            
-              <button>see more</button>
+             
         </div>
         <div class="single-project">
             <video src="./videos/netflix-clone.mp4" controls
             poster="./images/netflix-t.jpg">></video>
             <p>tech stack</p>
             <div class="tech-stack-icons">
-                <img src="./icons/react-original.svg" alt="React"> <p>React.js</p>
-                <img src="./icons/css.png" alt="css-icon"><p>CSS</p> 
+                <img src="./icons/react-original.svg" alt="React"> 
+                <img src="./icons/css.png" alt="css-icon"> 
             </div>
-            <a href="https://github.com/tsigemariamzewdu/Netflix-Clone-frontend"><img src="./icons//github-brands-solid.svg" alt="github-icon"></a>
+            <a href="https://github.com/tsigemariamzewdu/Netflix-Clone-frontend"><img src="./icons//github-brands-solid.svg" alt="github-icon"class="icon"></a>
             
-              <button>see more</button>
+             
         </div>
         <div class="single-project">
             <video src="./videos/interactive-solar-system-model.mp4" controls
             poster="images/soloar-model.jpg"></video>
             <p>tech stack</p>
             <div class="tech-stack-icons">
-                <img src="./icons/html.png" alt="html-icon"><p> HTML</p>
-                <img src="./icons/css.png" alt="css-icon"><p>CSS</p> 
-                <img src="./icons/javascript.png" alt="js-icon"><p>Javascript</p>
+                <img src="./icons/html.png" alt="html-icon">
+                <img src="./icons/css.png" alt="css-icon">
+                <img src="./icons/javascript.png" alt="js-icon">
             
         </div>
- <a href="https://github.com/tsigemariamzewdu/interactive-solar-model"><img src="./icons/github-brands-solid.svg" alt="github-icon"></a>
+ <a href="https://github.com/tsigemariamzewdu/interactive-solar-model"><img src="./icons/github-brands-solid.svg" alt="github-icon" class="icon"></a>
         
             
-              <button>see more</button>
+              
         </div>
         <div class="single-project">
             <video src="videos/mami-coffe-shop.mp4" controls poster="images/mami-coffee-thum.jpg"></video>
             <p>tech stack</p>
             <div class="tech-stack-icons">
-                <img src="./icons/html.png" alt="html-icon"><p> HTML</p>
-                <img src="./icons/css.png" alt="css-icon"><p>CSS</p> 
-                <img src="./icons/javascript.png" alt="js-icon"><p>Javascript</p>
+                <img src="./icons/html.png" alt="html-icon">
+                <img src="./icons/css.png" alt="css-icon"> 
+                <img src="./icons/javascript.png" alt="js-icon">
 
         </div>
-            <a href="https://github.com/tsigemariamzewdu/mami-coffee-shop-front-end"><img src="./icons/github-brands-solid.svg" alt="github-icon"></a>
+            <a href="https://github.com/tsigemariamzewdu/mami-coffee-shop-front-end"><img src="./icons/github-brands-solid.svg" alt="github-icon" class="icon"></a>
             
-              <button>see more</button>
+              
         </div>
+    </div>
 
     </main>
     <footer>
@@ -163,6 +186,6 @@
         </nav>
         <p>&copy; <span id="year"></span> Tsigemariam Zewdu. All rights reserved.</p>
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
