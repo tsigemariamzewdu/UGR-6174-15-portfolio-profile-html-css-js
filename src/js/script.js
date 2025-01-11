@@ -16,4 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
       sidebar.classList.add("hidden");
     });
   });
+  document.querySelectorAll('.single-hobby img').forEach((image) => {
+    image.addEventListener('mouseover', (event) => {
+        const singleDesc = event.target.closest('.single-hobby').querySelector('.single-desc');
+        singleDesc.style.display = 'block';
+    });
+
+    image.addEventListener('mouseout', (event) => {
+        const singleDesc = event.target.closest('.single-hobby').querySelector('.single-desc');
+        singleDesc.style.display = 'none';
+    });
+});
+
   

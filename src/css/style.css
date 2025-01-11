@@ -289,6 +289,217 @@ footer p {
   .show {
     transform: translateX(0);
   }
+  /* about-me page mobile */
+.about-me-hobbies {
+    
+  display: grid;
+  grid-template-columns: repeat(1,1fr); /* Responsive layout */
+  gap: 20px;
+  padding: 20px;
+}
+.single-hobby img{
+  height: 150px;
+  width: 150px;
+ 
+
+ 
+ 
+}
+
+
+.single-hobby p{
+  color: white;
+  width: 120px;
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+.single-hobby{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.single-hobbi{
+display: grid;
+grid-template-rows: repeat(2,1fr);
+
+width: 200px;
+height: 200px;
+
+}
+.single-desc{
+margin-left: -48px;
+margin-top: -48px;
+}
+.single-hobby h2{
+  display: flex;
+  color: white;
+  width: 300px;
+}
+.about-me-general img{
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left:50px;
+}
+figcaption{
+  color: rgb(217,241,255);
+  margin-bottom: 20px;
+  margin-left: 12px;
+  
+}
+.about-me-general p{
+color:rgb(217,241,255);
+font-family: "Lacquer", system-ui;
+font-size: 1.3rem;
+margin-left: 12px;
+margin-right: 12px;
+}
+
+/* project-page mobile */
+.tech-stack-icons img{
+  width: 30px;
+  height: 30px;
+}
+.tech-stack-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  /* background-color: lightcyan; */
+  box-shadow: 0 4px 10px rgba(203, 192, 192, 0.5);
+  border-radius: 12px;
+  width: 90%;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: -16px;
+
+}
+.single-project h3{
+margin-bottom: 12px;
+}
+.whole-projects{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+/* .single-project video{
+width: 150px;
+height: 200px;
+} */
+.title{
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* .single-project {
+  width: 90%;
+  margin-left: 7%;
+  height: 270px;
+  background-color: transparent;
+  border-radius: 24px;
+  border: 1px solid rgb(0, 217, 255); /* Set the border color, style, and width */
+  /* margin-bottom: 30px;
+  display: flex;
+} */ */
+/* .single-project a{
+  margin-top: 150px;
+ margin-left: 40px;
+
+} */
+
+main{
+  color:white;
+}
+
+.single-project {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-between;
+  background-color: transparent; 
+  border: 2px solid #00bcd4; /* Border to match the design */
+  border-radius: 10px; /* Smooth edges */
+  padding: 20px; /* Inner spacing */
+  width: 280px; /* Set a fixed width for the project box */
+  margin: 20px; /* Spacing around the container */
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif; /* Default font */
+}
+.single-project p{
+ margin-left: -24px;
+}
+/* Video styling */
+.single-project video {
+  width: 100%; /* Full width of the container */
+  border-radius: 8px; /* Rounded corners for the video */
+  margin-bottom: 10px; /* Spacing below the video */
+}
+
+/* Tech stack section */
+.tech-stack-icons {
+  display: flex; /* Use flexbox for horizontal alignment */
+  gap: 10px; /* Space between icons */
+  margin-bottom: 10px; /* Spacing below the tech stack section */
+}
+
+.tech-stack-icons img {
+  width: 40px; /* Size of tech stack icons */
+  height: auto;
+  /* box-shadow: 0 4px 10px rgba(203, 192, 192, 0.5); */
+
+}
+
+/* GitHub link styling */
+.single-project a {
+  display: inline-block; /* Ensure clickable area fits the icon */
+  margin-top: 10px;
+}
+
+.single-project .icon {
+  width: 30px; /* Icon size */
+  height: auto;
+  filter: sepia(1) saturate(5) hue-rotate(190deg); /* Invert colors to make the icon white */
+  transition: transform 0.3s ease; 
+  margin-left: -24px;/* Smooth hover effect */
+}
+
+.single-project .icon:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+.cv-page{
+  margin-top: 0;
+}
+.contact-me{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.contact-me-myinfo{
+  position: relative;
+  left: 20%;
+}
+.contact-me-myinfo img{
+  width: 30px;
+  height: 30px;
+
+}
+.conact-me-form{
+  width: 60%;
+  margin-left: 20%;
+}
+
+.contact-me-title{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
  
   /* Target tablets */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -373,192 +584,42 @@ footer p {
     .home-content p{
       margin-top: -12px;
     }
-}
-
-
-/* about-me page mobile */
-.about-me-hobbies {
+    .about{
+      margin-top: -300px;
+    }
+   
+    .about-me-hobbies {
     
-    display: grid;
-    grid-template-columns: repeat(1,1fr); /* Responsive layout */
-    gap: 20px;
-    padding: 20px;
-}
-.single-hobby img{
-    height: 150px;
-    width: 150px;
-   
-  
-   
-   
-}
-
-
-.single-hobby p{
-    color: white;
-    width: 120px;
-    margin-top: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-    font-size: 0.8rem;
-}
-.single-hobby{
+      display: grid;
+      grid-template-columns: repeat(2,1fr); /* Responsive layout */
+      gap: 20px;
+      padding: 20px;
+  }
+  .single-hobby img{
+      height: 150px;
+      width: 150px;
+     
+    
+     
+     
+  }
+  .projects{
+    margin-top: -100px;
+  }
+  .whole-projects{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}
-.single-hobbi{
-  display: grid;
-  grid-template-rows: repeat(2,1fr);
- 
-  width: 200px;
-  height: 200px;
- 
-}
-.single-desc{
-  margin-left: -48px;
-  margin-top: -48px;
-}
-.single-hobby h2{
-    display: flex;
-    color: white;
-    width: 300px;
-}
-.about-me-general img{
-    width: 250px;
-    height: 250px;
-    border-radius: 30px;
-    align-items: center;
-    justify-content: center;
-    margin-left:50px;
-}
-figcaption{
-    color: rgb(217,241,255);
-    margin-bottom: 20px;
-    margin-left: 12px;
+    margin-left: 2%;
     
-}
-.about-me-general p{
-color:rgb(217,241,255);
-font-family: "Lacquer", system-ui;
-font-size: 1.3rem;
-margin-left: 12px;
-margin-right: 12px;
-}
-
-/* project-page mobile */
-.tech-stack-icons img{
-    width: 30px;
-    height: 30px;
-}
-.tech-stack-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    /* background-color: lightcyan; */
-    box-shadow: 0 4px 10px rgba(203, 192, 192, 0.5);
-    border-radius: 12px;
-    width: 90%;
-    height: 50px;
-    margin-top: 40px;
-    margin-left: -16px;
-
-}
-.single-project h3{
-  margin-bottom: 12px;
-}
-.whole-projects{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-}
-/* .single-project video{
-width: 150px;
-height: 200px;
-} */
-.title{
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-}
-/* .single-project {
-    width: 90%;
-    margin-left: 7%;
-    height: 270px;
-    background-color: transparent;
-    border-radius: 24px;
-    border: 1px solid rgb(0, 217, 255); /* Set the border color, style, and width */
-    /* margin-bottom: 30px;
-    display: flex;
-} */ */
-/* .single-project a{
-    margin-top: 150px;
-   margin-left: 40px;
-
-} */
-
-main{
-    color:white;
-}
-
-.single-project {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: space-between;
-    background-color: transparent; 
-    border: 2px solid #00bcd4; /* Border to match the design */
-    border-radius: 10px; /* Smooth edges */
-    padding: 20px; /* Inner spacing */
-    width: 280px; /* Set a fixed width for the project box */
-    margin: 20px; /* Spacing around the container */
-    color: #fff; /* White text color */
-    font-family: Arial, sans-serif; /* Default font */
-  }
-  .single-project p{
-   margin-left: -24px;
-  }
-  /* Video styling */
-  .single-project video {
-    width: 100%; /* Full width of the container */
-    border-radius: 8px; /* Rounded corners for the video */
-    margin-bottom: 10px; /* Spacing below the video */
-  }
   
-  /* Tech stack section */
-  .tech-stack-icons {
-    display: flex; /* Use flexbox for horizontal alignment */
-    gap: 10px; /* Space between icons */
-    margin-bottom: 10px; /* Spacing below the tech stack section */
-  }
+}
   
-  .tech-stack-icons img {
-    width: 40px; /* Size of tech stack icons */
-    height: auto;
-    /* box-shadow: 0 4px 10px rgba(203, 192, 192, 0.5); */
 
-  }
-  
-  /* GitHub link styling */
-  .single-project a {
-    display: inline-block; /* Ensure clickable area fits the icon */
-    margin-top: 10px;
-  }
-  
-  .single-project .icon {
-    width: 30px; /* Icon size */
-    height: auto;
-    filter: sepia(1) saturate(5) hue-rotate(190deg); /* Invert colors to make the icon white */
-    transition: transform 0.3s ease; 
-    margin-left: -24px;/* Smooth hover effect */
-  }
-  
-  .single-project .icon:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
-  }
-  
+
+
+
   /* Responsive design for larger layouts */
-  @media (min-width: 768px) {
+  
     .single-project {
       width: 250px; 
       margin-left: 5px;;/* Increase width for larger screens */
@@ -598,6 +659,7 @@ main{
      ;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    
   }
   .cv-image img{
     width: 120px;
@@ -982,35 +1044,67 @@ form textarea::placeholder {
     width: 300px;
    
     margin-top: -130px;
-    margin-left: 70%;
+    margin-left: 60%;
   
   }
   .about-me-general{
     margin-left: 20%;
   }
   .about-me-general audio{
-    margin-left: 70%;
+    margin-left: 0%;
   }
   .about-me-hobbies {
     grid-area: hobbies;
     display: grid;
-    grid-template-columns: repeat(3,1fr); /* Responsive layout */
+    grid-template-columns: repeat(3, 1fr); /* Responsive layout */
     gap: 20px;
     padding: 20px;
     margin-left: 9%;
-}
-.single-hobby img{
-  width: 250px;
-  height: 200px;
+  }
   
-
-}
-.single-hobbi{
-  margin-bottom: 20px;
-}
-.single-desc{
-  display: none;
-}
+  .single-hobby {
+    position: relative;
+  }
+  
+  .overlay-container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+  }
+  
+  .overlay-container img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay */
+    color: white;
+    font-size: 1rem;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Prevent mouse interaction */
+  }
+  
+  .overlay-container:hover img {
+    opacity: 0.3; /* Dim the image */
+  }
+  
+  .overlay-container:hover .overlay-text {
+    opacity: 1; /* Make text visible */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
 
 /* cv page */
 /* .cv-page{
@@ -1139,5 +1233,11 @@ position: relative;
 right:70%;
 top: 100px;
 }
+.whole-projects{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 2%;
+  
 
+}
 }
